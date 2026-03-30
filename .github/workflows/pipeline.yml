@@ -1,0 +1,29 @@
+name: Image Sorter Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install pillow flake8 black
+
+      - name: Format check
+        run: black --check .
+
+      - name: Lint
+        run: flake8 .
+
+      - name: Run test script
+        run: ./test.sh
