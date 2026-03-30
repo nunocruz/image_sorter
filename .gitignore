@@ -1,0 +1,31 @@
+# Python/Development
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+
+# Image/Photography (keep originals out of repo)
+*.jpg
+*.jpeg
+*.png
+*.tiff
+*.raw
+*.psd
+*.ai
+!*.md  # But keep markdown images if referenced in docs
+
+# IDE/Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+build/
+*.log
