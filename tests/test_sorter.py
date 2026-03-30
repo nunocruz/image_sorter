@@ -5,7 +5,7 @@ import os
 from pathlib import Path
 from PIL import Image
 
-from sorter import sort_images
+from src.image_sorter.sorter import sort_images
 
 
 class TestImageSorting(unittest.TestCase):
