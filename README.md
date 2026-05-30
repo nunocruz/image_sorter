@@ -17,7 +17,7 @@ A simple Python script to sort images into folders based on their orientation:
 - Horizontal (landscape)
 - Vertical (portrait)
 - Square
-- 
+
 ## Usage
 Run the script from your terminal and pass the folder containing your images as an argument:
 
@@ -60,7 +60,7 @@ Each image will be moved into the appropriate folder.
 * A progress bar displays sorting progress for large directories.
 
 # Transformer
-A Python script that recursively resizes images so their largest dimension does not exceed 1080px, preserving aspect ratio. Images are resized in place.
+A Python script that recursively resizes images so their largest dimension does not exceed 1080px, preserving the aspect ratio. Images are resized in place. Then it proceeds to create a square flat base layer image, to paste the image on top of it and flatten it back to one layer.
 
 ## Usage
 
@@ -79,7 +79,6 @@ python src/image_sorter/transformer.py /path/to/your/images --max-dim 720
 ```bash
 python src/image_sorter/transformer.py /Users/nuno/Library/CloudStorage/ProtonDrive-nuno.cruz.87@pm.me-folder/Photos/2026/IG\ post 
 ```
-
 
 ## Notes
 
